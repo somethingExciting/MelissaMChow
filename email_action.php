@@ -22,7 +22,9 @@
 
 
     $errors = "";
-    $myemail = 'melissachowmq@gmail.com';
+    $file = fopen("C:\\Users\\melis\\git\\MelissaChowWebsite\\email.txt", "r");
+    $myemail = fgets($file);
+    fclose($file);
 
     // check if any of the fields are empty; all are required
     if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['subject'])) {
