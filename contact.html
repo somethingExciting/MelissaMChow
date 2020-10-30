@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
+<head>
 <title> Melissa Chow Contact Page </title> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, intial scale=1">
@@ -10,6 +12,8 @@
 <style>
 html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 </style>
+</head>
+
 <body style="background-color:#fcfcfc">
 
 <!-- Navbar -->
@@ -40,11 +44,11 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 
 <!-- Contact Form -->
 <div class="w3-row-padding w3-padding-64 w3-container">
-  <form method="post" onsubmit="email_action.php">
+  <form method="post" action="email_action.php" target="_blank">
 
     <div class="w3-content">
         <label for="name">Full Name: *</label>
-        <input class="w3-input w3-padding" type="text" id="name" name="fullname" placeholder="Your name..." required>
+        <input class="w3-input w3-padding" type="text" id="name" name="fullname" placeholder="Your full name..." required>
     </div>
 
     <br>
@@ -64,8 +68,7 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
     <br>
 
     <div class="w3-content">
-        <input class="w3-button w3-red w3-padding-large" type="submit" value="
-        Submit">
+        <input class="w3-button w3-red w3-padding-large" onclick="window.location.href = 'thanks_sub.html'" type="submit" value="Submit">
     </div>
 
   </form>
