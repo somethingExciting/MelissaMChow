@@ -3,19 +3,16 @@
 <html lang="en-US">
 
 <head>
-<title> Melissa Chow Home Page </title> 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, intial scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="images/tacocat.png">
-<style>
-html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
-</style>
+  <title> Melissa Chow Home Page </title> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/tacocat.png">
 </head>
 
-<body style="background-color:#fcfcfc">
+<body>
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -64,6 +61,12 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
     <div class="w3-third w3-center">
       <img src="images/melissa_icon.png" alt="MelissaC" style="width:225px; height:225px">
     </div>
+
+    <!-- Trying to circle crop icon in HTML
+    <div class="w3-third w3-center" style="background-size:cover; background-position:center; border-radius:50%">
+      <img src="images/test.jpg" alt="MelissaC" style="width:225px; height:225px" class="rounded">
+    </div>
+    -->
   </div>
 </div>
 
@@ -82,29 +85,18 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
     <a href="https://www.linkedin.com/in/melissa-chow-90u/">
         <i class="fa fa-linkedin w3-hover-opacity"></i>
     </a>
+    <a href="mailto:m.chow2989@gmail.com?subject=Contact%20via%20website!&body=--DO NOT REMOVE-- #mcwebsite">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
   </div>
   <p>Last Updated on: <span id="datetime"></span></p>
 
-  <script>
-    var dt = new Date();
-    document.getElementById("datetime").innerHTML = dt.toLocaleString();
-    console.log('UPDATED')
-  </script>     
-
+  <script src="js_functions.js"> </script>  
+  
  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+<script src="scripts/smallScreen.js"></script>
 
 </body>
 </html>

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<title> Melissa Chow School Page </title> 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, intial scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="images/tacocat.png">
-<style>
-html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
-</style>
-<body style="background-color:#fcfcfc">
+
+<head>
+  <title> Melissa Chow School Page </title> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, intial scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="images/tacocat.png">
+</head>
+
+<body>
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -81,7 +82,7 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
     </div>
 
     <div class="w3-third w3-center">
-      <img src="images/icpc2018.jpg" alt="tigers_icpc" width="350" height="305">
+      <img src="images/icpc2018.JPG" alt="tigers_icpc" width="350" height="305">
     </div>
   </div>
 </div>
@@ -100,22 +101,15 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
     <a href="https://www.linkedin.com/in/melissa-chow-90u/">
         <i class="fa fa-linkedin w3-hover-opacity"></i>
     </a>
+    <a href="mailto:m.chow2989@gmail.com?subject=Contact%20via%20website!&body=--DO NOT REMOVE-- #mcwebsite">
+      <i class="fa fa-envelope w3-hover-opacity"></i>
+    </a>
   </div>
 
  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+<script src="smallScreen.js"></script>
 
 </body>
 </html>
