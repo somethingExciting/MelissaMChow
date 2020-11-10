@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <title> Melissa Chow School Page </title> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, intial scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/tacocat.png">
 <style>
 html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 </style>
-<body>
+<body style="background-color:#fcfcfc">
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-pale-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="school.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">University</a>
-    <a href="experience.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Work Experience</a>
-    <a href="hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hobbies</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey">Home</a>
+    <a href="school.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">University</a>
+    <a href="experience.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Work Experience</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Contact</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -34,7 +35,7 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 <!-- Header -->
 <header class="w3-container w3-red w3-center" style="padding:100px 109px">
   <h1 class="w3-margin w3-jumbo">University</h1>
-  <p class="w3-xlarge">My schooling background</p>
+  <p class="w3-xlarge">Education Background</p>
 </header>
 
 <!-- First Grid -->
@@ -42,9 +43,9 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>University of the Pacific</h1>
-      <h5 class="w3-padding-32">School of Engineering and Computer Science (SOECS)</h5>
+      <h5 class="w3-padding-32">School of Engineering and Computer Science (SOECS) <b>Class of 2020</b></h5>
       
-      <p class="w3-text-grey">UOP blurb</p>
+      <p class="w3-text-grey">I began university at UOP in 2016 declared as a Computer Science major, unsure of whether it was the right major for me. Four(4) years later, following many hardships and struggles, I've graduated with a Bachelor's! I'm thankful for my friends' support, professors' expertise, and the professional resources UOP provided to me in order to grow as a developer.</p>
     </div>
 
     <div class="w3-third w3-center">
@@ -62,16 +63,37 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 
     <div class="w3-twothird">
       <h1>Association for Computing Machinery (ACM)</h1>
-      <h5 class="w3-padding-32">President and Treasurer</h5>
+      <h5 class="w3-padding-32">President and Treasurer (2018-2019)</h5>
 
-      <p class="w3-text-grey">ACM blurb</p>
+      <p class="w3-text-grey">As a member of ACM, we learned about new technologies and held LAN parties once a semester as a club bonding activity! Most notably, during the fall semester, we prepare to participate in <a href="#icpc">ICPC</a> and in the spring, we open club meetings to learning about new technologies or invite guest speakers talk about technologies used at their company, job opportunities, resume help, etc.</p>
     </div>
   </div>
 </div>
 
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>International Collegiate Programming Contest (ICPC)</h1>
+      <h5 id="icpc" class="w3-padding-32">Member of ACM (2017 - 2019)</h5>
+      
+      <p class="w3-text-grey">I participated in ICPC (learn more about the contest <a href="https://icpc.global/">here</a>) for two(2) years in a row, where I worked with a team of three(3) to develop solutions to solve problems such as <a href="https://icpc.global/xwiki/wiki/public/download/worldfinals/problems/icpc2019.pdf">these</a>. Both years that I participated, the contest was held at University of California Berkeley and all teams from UOP advanced to the Pacific Northwest Regionals (which occurs after the qualifier round). During my presidency (2018-2019), I organized this event and was excited to see our teams excel during the contest! </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="images/icpc2018.jpg" alt="tigers_icpc" width="350" height="305">
+    </div>
+  </div>
+</div>
+
+<!-- Seperator -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-32">
+
+</div>
+
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
+<footer class="w3-container w3-padding w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-16">
     <a href="https://github.com/somethingExciting">
         <i class="fa fa-github w3-hover-opacity"></i>
     </a>

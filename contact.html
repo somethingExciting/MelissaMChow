@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
+<head>
 <title> Melissa Chow Contact Page </title> 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, intial scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Baskerville">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="images/tacocat.png">
 <style>
 html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 </style>
-<body>
+</head>
+
+<body style="background-color:#fcfcfc">
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-pale-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">School</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Work Experience</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hobbies</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-light-grey">Home</a>
+    <a href="school.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">School</a>
+    <a href="experience.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Work Experience</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Contact</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">School</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Work Experience</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Hobbies</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+    <a href="school.html" class="w3-bar-item w3-button w3-padding-large">School</a>
+    <a href="experience.html" class="w3-bar-item w3-button w3-padding-large">Work Experience</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-padding-large">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
   </div>
 </div>
 
@@ -39,31 +44,31 @@ html, body, h1, h2, h3, {font-family: "Libre%20Baskerville", serif}
 
 <!-- Contact Form -->
 <div class="w3-row-padding w3-padding-64 w3-container">
-  <form action="email_action.php">
+  <form method="post" action="email_action.php" target="_blank">
 
     <div class="w3-content">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="fullname" placeholder="Your name...">
+        <label for="name">Full Name: *</label>
+        <input class="w3-input w3-padding" type="text" id="name" name="fullname" placeholder="Your full name..." required>
     </div>
 
     <br>
 
     <div class="w3-content">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="contact" placeholder="Your email address...">
+        <label for="email">Email: *</label>
+        <input class="w3-input w3-padding" type="text" id="email" name="contact" placeholder="Your email address..." required>
     </div>
 
     <br>
 
     <div class="w3-content">
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+        <label for="subject">Subject: *</label> <br>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px" cols="108" required></textarea>
     </div>
 
     <br>
 
     <div class="w3-content">
-        <input type="submit" value="Submit">
+        <input class="w3-button w3-red w3-padding-large" onclick="window.location.href = 'thanks_sub.html'" type="submit" value="Submit">
     </div>
 
   </form>
