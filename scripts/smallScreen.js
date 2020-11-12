@@ -3,6 +3,7 @@ Location: index.html, experiences.html, hobbies.html, school.html
 Usage: toggle the menu on small screens when clicking on the menu button
 */
 var x = document.getElementById("navDemo");
+
 if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
 } else { 

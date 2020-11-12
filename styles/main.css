@@ -3,3 +3,32 @@ html, body, h1, h2,h3 {font-family: "Libre%20Baskerville", serif;}
 body {
     background-color:#fcfcfc;
 }
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: main; 
+}
+
+.item3 {
+    grid-area: img;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'main main img'
+        'img main main'
+        'main main img';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
